@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">FarmingInventoryTracker</string>
+    <string name="add_crop_actionbar">Add Crop</string>
+    <string name="add_supply_actionbar">Add Supply</string>
+    <string name="add_tool_actionbar">Add Tool</string>
+    <string name="change_font_actionbar">Change Font</string>
+    <string name="cropTypeLabel">Type of crop:</string>
+    <string name="newCropTypeHint">New crop type...</string>
+    <string name="newCropTypeLabel">or add new crop type:</string>
+    <string name="addSupplyToCropTypeOfSupply">Type of supply:</string>
+    <string name="addSupplyToCropAmount">Amount:</string>
+    <string name="addCropAddSupplyButton">Add Supply</string>
+    <string name="addCropAddDateButton">Add Date</string>
+    <string name="addCropSubmit">Add Crop</string>
+    <string name="add_a_new_type">Add a new Type:</string>
+    <string name="supply_type">Supply Type:</string>
+    <string name="amount">Amount:</string>
+    <string name="tabViewCrops">View Crops</string>
+    <string name="tabViewSupplies">View Supplies</string>
+    <string name="tabViewTools">View Tools</string>
+    <string name="darkmodelabel">Switch Mode</string>
+    <string name="saved_font" />
+    <string name="home_actionbar">Home</string>
+    <string name="share_button_text">Share</string>
+    <string name="delete_preamble">Deleting </string>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollViewLayout"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    tools:context=".AddCropFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Spinner
+        android:id="@+id/cropTypes"
+        android:textSize="@dimen/add_crop_text_size"
+        android:layout_width="156dp"
+        android:layout_height="48dp"
+        app:layout_constraintStart_toStartOf="@id/cropTypesLabel"
+        app:layout_constraintTop_toBottomOf="@id/cropTypesLabel" />
+        <TextView
+            android:id="@+id/cropTypesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="313dp"
+            android:text="@string/cropTypeLabel"
+            android:textColor="@color/black"
+            android:textSize="@dimen/add_crop_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/addNewCropTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:text="@string/newCropTypeLabel"
+        android:textColor="@color/black"
+        android:textSize="@dimen/add_crop_text_size"
+        app:layout_constraintStart_toEndOf="@+id/cropTypesLabel"
+        app:layout_constraintTop_toTopOf="@id/cropTypesLabel" />
+
+    <EditText
+        android:id="@+id/addNewCropTypeInput"
+        android:textSize="@dimen/add_crop_text_size"
+        android:layout_width="156dp"
+        android:layout_height="48dp"
+        android:inputType="text"
+        android:importantForAutofill="no"
+        android:hint="@string/newCropTypeHint"
+        app:layout_constraintStart_toStartOf="@+id/addNewCropTypeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/addNewCropTypeLabel" />
+
+    <View
+        android:id="@+id/addCropDivider1"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="11dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cropTypes" />
+
+    <Button
+        android:id="@+id/addCropAddSupplyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="142dp"
+        android:text="@string/addCropAddSupplyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addCropDivider1" />
+
+    <LinearLayout
+        android:id="@+id/addSupplyToCropBox"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/addCropDivider2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp" >
+    </LinearLayout>
+
+    <View
+        android:id="@+id/addCropDivider2"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addCropAddSupplyButton" />
+
+    <Button
+        android:id="@+id/addCropAddDateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="142dp"
+        android:text="@string/addCropAddDateButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addSupplyToCropBox" />
+
+    <View
+        android:id="@+id/addCropDivider3"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addCropAddDateButton" />
+
+    <Button
+        android:id="@+id/addCropSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="142dp"
+        android:text="@string/addCropSubmit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addCropDivider3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

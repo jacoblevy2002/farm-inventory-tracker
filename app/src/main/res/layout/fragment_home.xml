@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background_color"
+    tools:context=".HomeFragment">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/homeTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabViewCrops"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/tabViewCrops" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabViewSupplies"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/tabViewSupplies" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabViewTools"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/tabViewTools" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchdarkmode"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homeTabs" />
+
+    <TextView
+        android:id="@+id/darkmodelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="19dp"
+        android:text="@string/darkmodelabel"
+        app:layout_constraintEnd_toStartOf="@+id/switchdarkmode"
+        app:layout_constraintTop_toTopOf="@id/switchdarkmode" />
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="141dp"
+        android:text="@string/share_button_text"
+        app:layout_constraintEnd_toStartOf="@+id/darkmodelabel"
+        app:layout_constraintTop_toBottomOf="@+id/homeTabs" />
+
+    <FrameLayout
+        android:id="@+id/homeFrame"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/switchdarkmode" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
